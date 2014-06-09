@@ -21,3 +21,12 @@
 *.i*86
 *.x86_64
 *.hex
+
+# Webstorm files
+.idea/*
+
+# Compass files
+.sass-cache/*
+
+# Codekit files
+config.codekit
