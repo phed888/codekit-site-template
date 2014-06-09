@@ -1,0 +1,26 @@
+/////////////////////////////////////////
+//  Variables
+/////////////////////////////////////////
+
+//  Screen widths
+$break-small:                     320px
+$break-large:                     1024px
+
+/////////////////////////////////////////
+//  Mixins
+/////////////////////////////////////////
+
+/////////////////////////////////////////
+//  Media Queries
+/////////////////////////////////////////
+
+=respond-to($media)
+  @if $media == handhelds
+    @media only screen and (max-width: $break-small)
+      @content
+  @else if $media == medium-screens
+    @media only screen and (min-width: $break-small + 1) and (max-width: $beak-large - 1)
+      @content
+  @else if $media == wide-screens
+    @media only screen and (min-width: $break-large)
+      @content
